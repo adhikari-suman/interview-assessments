@@ -10,6 +10,6 @@ Expected: Tab 1 and Tab 2 can be switched interchangeably.
 
 ## 2. Assessment 2
 
-There is a bug in this code causing the timer to get stuck on 5 please fix it.
+There is a bug in this code causing the count to keep on running, please fix it.
 
-Expected: Timer goes from 5 to 0 and resets to 5.
+Expected: The counter is initially at 5. Clicking the buttons increment/decrement by 5.
