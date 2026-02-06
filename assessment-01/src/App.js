@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import TabOne from "./TabOne";
+import TabTwo from "./TabTwo";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header>
+        <h1>The power of Tabs</h1>
       </header>
+
+      {/* Tabs */}
+      <div className="tabs">
+        <button className="tab">Tab 1</button>
+        <button className="tab">Tab 2</button>
+      </div>
+
+      {/* Body */}
+      <div className="tab-body">
+        {/* TODO: Please render only one tab based on the button clicked above */}
+        <TabOne />
+        <TabTwo />
+      </div>
     </div>
   );
 }
